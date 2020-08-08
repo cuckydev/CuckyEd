@@ -50,7 +50,7 @@ add_executable(CuckyEd WIN32
 	"lib/mdcomp/snkrle.hh"
 )
 
-# Include library directories
+# Include library directory
 target_include_directories(CuckyEd PRIVATE "lib")
 
 # Some other CMake setup stuff
@@ -60,6 +60,9 @@ list(APPEND CMAKE_MODULE_PATH
 
 set_target_properties(CuckyEd PROPERTIES
 	RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/bin"
+	#CXX_STANDARD 17
+	#CXX_STANDARD_REQUIRED ON
+	#CXX_EXTENSIONS OFF
 )
 
 ################
