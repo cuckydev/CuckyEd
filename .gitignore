@@ -1,0 +1,12 @@
+# Exclude recommended CMake build directory
+build/
+
+# Exclude potential binaries
+bin/CuckyEd
+bin/CuckyEd.exe
+
+# Exclude VS Code data
+.vscode/
+
+# Exclude work files
+s1disasm/
